@@ -110,7 +110,76 @@ var lastName = "Oberoi";
 var lala = "This is the first. " + "This is the second.";
 console.log(lala);
 
-//concatenating using plus equal to operator
-var firstString = "I come first."
-var secondString += "I come second."
-console.log(secondString);
+//length of a string
+var firstNameLength=0;
+var firstName="Ada";
+firstNameLength=firstName.length;
+console.log(firstNameLength);
+
+var lastNameLength=0;
+var lastName="Lovelace";
+lastNameLength=lastName.length;
+console.log(lastNameLength);
+
+//bracket notation to find first character in string
+var firstLetterOfFirstName= "";
+var firstName="Ada";
+
+firstLetterOfFirstName=firstName[0];
+console.log(firstLetterOfFirstName);
+
+//same method goes with the last name
+
+//string immutability
+var mystring = "Jello World";
+mystring="Hello World"; //you cannot change individual letters
+
+//find nth character of string
+var firstName="Ada";
+var secondLetterOfFirstName = firstName[1];
+console.log(secondLetterOfFirstName);
+
+//find last character of a string
+var firstName="Ada";
+var lastCharacterOfFirstName = firstName[firstName.length-1];
+console.log(lastCharacterOfFirstName);
+
+//find nth to last character of a string
+var firstName="Ada";
+var secondToLastCharacterOfFirstName = firstName[firstName.length-2];
+console.log(secondToLastCharacterOfFirstName);
+
+//word blanks
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result = "The " + myAdjective +" " + myNoun + " " + myVerb + " to the store " + myAdverb;
+    return result;
+}
+
+console.log(wordBlanks("dog","big","ran","quickly"));
+
+//store multiple values with arrays
+var ourArray= ["John",23];
+var myArray = ["Kaju",1];
+console.log(myArray);
+
+//nested arrays
+var nestArray = [["everything",42],["universe",100]];
+console.log(nestArray);
+
+//access data of array
+var ourArray=[50,60,70];
+var ourData= ourArray[0];
+console.log(ourData);
+
+//modify array data
+var ourArray=[23,65,89];
+ourArray[1]=45;
+console.log(ourArray);
+
+//access multi-dimensional array with indexes
+var myArray= [[1,2,3],[4,5,6],[7,8,9],[10,11,12],13,14];
+var myData= myArray[0][0];
+console.log(myData);
+
+//push function
