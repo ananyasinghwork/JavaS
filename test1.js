@@ -183,3 +183,21 @@ var myData= myArray[0][0];
 console.log(myData);
 
 //push function
+var ourArray=["everyone","here","is"];
+ourArray.push(["happy"]);
+console.log(ourArray);
+
+//pop function removes the last array element 
+var ourArray=[1,2,3];
+var removedFromOurArray = ourArray.pop();
+console.log(ourArray);
+
+//shift function removes first element of the array
+var ourArray=[1,2,3];
+var removedFromOurArray = ourArray.shift();
+console.log(ourArray);
+
+//unshift function adds an element to beginning of the array
+var ourArray=[5,6,7];
+var addedToOurArray = ourArray.unshift("78");
+console.log(ourArray);
