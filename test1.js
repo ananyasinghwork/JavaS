@@ -96,7 +96,7 @@ var c=17;
 a+=5;
 b-=2;
 c*=10;
-console.log(a,b,c);
+console.log(a);
 
 //declare string variables
 var firstName = "Anushka ";
@@ -106,8 +106,6 @@ console.log(firstName+lastName);
 //quoting strings with single quotes
 
 //escape sequences
-var myVariable = "FirstLine\n\t\\SecondLine\nThirdLine";
-console.log(myVariable);
 
 //concatenating strings with plus operator
 var strAdd = "This is the first. " + "This is the second.";
