@@ -41,5 +41,18 @@ b=b+1
 //it is case-sensitive
 
 //adding numbers
-var a=10+10;
-console.log(a);
+var sum=10+10;
+console.log(sum);
+
+//subtraction
+var difference = 45-3;
+console.log(difference);
+
+//multiplication
+var product=8*10;
+console.log(product);
+
+//division
+var quotient = 66/33;
+console.log(quotient);
+
