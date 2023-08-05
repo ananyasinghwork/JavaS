@@ -101,18 +101,16 @@ console.log(a);
 //declare string variables
 var firstName = "Anushka ";
 var lastName = "Oberoi";
-console.log(firstName+lastName);
 
 //quoting strings with single quotes
 
 //escape sequences
 
 //concatenating strings with plus operator
-var strAdd = "This is the first. " + "This is the second.";
-console.log(strAdd);
+var lala = "This is the first. " + "This is the second.";
+console.log(lala);
 
 //concatenating using plus equal to operator
 var firstString = "I come first."
 var secondString += "I come second."
 console.log(secondString);
-
