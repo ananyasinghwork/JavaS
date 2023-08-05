@@ -104,8 +104,6 @@ var lastName = "Oberoi";
 console.log(firstName+lastName);
 
 //quoting strings with single quotes
-var myStr= '<a href="http://www.example.com" target="_blank">Link</a>'
-console.log(myStr);
 
 //escape sequences
 var myVariable = "FirstLine\n\t\\SecondLine\nThirdLine";
