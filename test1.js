@@ -97,3 +97,26 @@ a+=5;
 b-=2;
 c*=10;
 console.log(a,b,c);
+
+//declare string variables
+var firstName = "Anushka ";
+var lastName = "Oberoi";
+console.log(firstName+lastName);
+
+//quoting strings with single quotes
+var myStr= '<a href="http://www.example.com" target="_blank">Link</a>'
+console.log(myStr);
+
+//escape sequences
+var myVariable = "FirstLine\n\t\\SecondLine\nThirdLine";
+console.log(myVariable);
+
+//concatenating strings with plus operator
+var strAdd = "This is the first. " + "This is the second.";
+console.log(strAdd);
+
+//concatenating using plus equal to operator
+var firstString = "I come first."
+var secondString += "I come second."
+console.log(secondString);
+
