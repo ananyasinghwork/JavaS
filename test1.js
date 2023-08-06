@@ -201,3 +201,44 @@ console.log(ourArray);
 var ourArray=[5,6,7];
 var addedToOurArray = ourArray.unshift("78");
 console.log(ourArray);
+
+//shopping list demonstrating array within an array
+var myList = [["cereal",2],["banana",7],["books",5],["pens"],2]
+
+//reusable code with functions
+function ourReuasableFunction() {
+    console.log("Hello World");
+}
+
+ourReuasableFunction();
+ourReuasableFunction();
+ourReuasableFunction();
+
+//function to add two numbers
+function add(a,b) {
+    console.log(a+b);
+}
+
+add(10,5);
+
+//global scope of variables
+var myGlobal =10;
+
+function fun1() {
+    oopsGlobal =5; //since there is no var given here, oopsGlobal acts as a global variable
+}
+
+function fun2() {
+    var output ="";
+    if(typeof myGlobal != "undefined") {
+        output += "myGlobal:" + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+        output += "oopsGlobal:" + oopsGlobal;
+    }
+    console.log(output);
+}
+fun1();
+fun2();
+
+//
