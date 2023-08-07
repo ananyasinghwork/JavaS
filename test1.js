@@ -241,4 +241,24 @@ function fun2() {
 fun1();
 fun2();
 
-//
+//local variable
+function myLocalScope(){
+    myVar=5;
+    console.log(myVar);
+}
+myLocalScope();
+console.log(myVar);
+
+//global vs local variables 
+//local variable takes precedent over the global variable when function is called
+//global variable takes precedent over local variable when it is normally invoked
+var outerwear=tshirt;
+
+function myOutfit() 
+{
+    var outerwear=sweater;
+    return outerwear;
+}
+
+console.log(myOutfit());
+//output will be sweater and NOT tshirt
