@@ -461,4 +461,114 @@ function isLessThan(a,b)
 
 console.log(isLessThan(10,15));
 
-//objects
+//objects using dot or bracket notation
+var myDog = {
+    "name": 'Shiro',
+    "age" : 10,
+    "legs" : 4,
+    "tails" : 1
+}
+
+var nameofthedog = myDog.name;
+var ageofthedog= myDog.age;
+
+myDog.bark = "Bow Bow";
+
+delete myDog.tails;
+
+//while loops
+var myArray=[];
+
+var i=0;
+while(i<5) {
+    myArray.push(i);
+    i++;
+}
+console.log(myArray);
+
+//for loop
+var myArray=[];
+
+for(var i=0;i<5;i++)
+{
+    myArray.push(i);
+}
+console.log(myArray);
+
+
+//iterate odd numbers using for loop
+var ourArray=[];
+
+for(var i=1;i<10;i=i+2) {
+    myArray.push(i);
+}
+console.log(myArray);
+
+//iterate through an array using for loop
+var ourArray=[1,54,65,34];
+var ourTotal=[];
+
+for(var i=0;i<ourArray.length;i++) {
+    ourTotal += ourArray; 
+}
+console.log(ourTotal);
+
+//nesting for loops
+function multiplyAll(arr) {
+    var product=1;
+    for(var i=1; i<arr.length; i++)
+    {
+        for(var j=0; j<arr[i].length; j++)
+        {
+            product *= arr[i][j];
+        }
+    }
+    return product;
+}
+
+var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+console.log(product);
+
+//do..while loops
+var myArray = [];
+var i=10;
+
+do {
+    myArray.push(i);
+    i++;
+}
+while (i<5) 
+
+console.log(i, myArray);
+
+//random function
+function randomFunction() {
+    return Math.random();
+}
+
+console.log(randomFunction);
+
+//random whole number
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+function randomWholeNumber() {
+    return Math.floor(Math.random());
+}
+console.log(randomWholeNumber());
+
+//random number in a range
+function ourrandomnumber(maxnum,minnum)
+{
+    return num = Math.floor(Math.random() * (maxnum - minnum +1)) + minnum;
+}
+console.log(ourrandomnumber(5,15));
+
+
+//parseInt function
+//it takes a string and returns an integer
+
+function convertToInteger(str)
+{
+    return parseInt(str);
+}
+console.log(convertToInteger("56"));
+
