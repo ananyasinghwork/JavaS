@@ -612,6 +612,23 @@ console.log(checkSign(10));
 //array can be mutated when we use bracket notation despite using const
 
 //object.freeze is used to make const values immutable
+console.log("HERE WE HAVE COMPLETED BASIC JS");
+
 
 //arrow functions
 const magic = () =>  new Date();
+
+//Events
+/* there are two kinds-
+1. event handler
+2. event listener
+*/
+
+/* Event Handlers -
+1. onclick
+2. onload
+3. onmouseover
+4. onmouseout
+5. onkeypress
+6. onkeydown
+7. onkeyup
