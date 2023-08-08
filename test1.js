@@ -572,3 +572,46 @@ function convertToInteger(str)
 }
 console.log(convertToInteger("56"));
 
+//parseInt on binary 
+//it takes a binary number as a string and returns an integer
+function convertToInteger(str)
+{
+    return parseInt(str, 2);
+}
+console.log(convertToInteger("11010"));
+
+//using the conditional operator
+// condition ? statement-if-true : statement-if-false
+
+function checkEqual(a,b) {
+    if(a===b)
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(checkEqual(1,2));
+
+//multiple ternary operator
+function checkSign(num){
+    return num>0 ? "positive" : num<0 ? "Negative" : "Zero";
+}
+
+console.log(checkSign(10));
+
+//var vs let keywords
+//VAR lets you change the value of variable multiple times - created GLOBALLY
+//LET doesnt let you change value of variable once declared - LIMITED TO BLOCK IT WAS DECLARED AT
+
+//const variable
+//it is READ-ONLY
+
+//array can be mutated when we use bracket notation despite using const
+
+//object.freeze is used to make const values immutable
+
+//arrow functions
+const magic = () =>  new Date();
