@@ -262,3 +262,203 @@ function myOutfit()
 
 console.log(myOutfit());
 //output will be sweater and NOT tshirt
+
+//return a value
+function minusSeven(number) {
+    return number -7;
+}
+
+console.log(minusSeven(10));
+
+function timesFive(num) {
+    return num*5;
+}
+
+console.log(timesFive(5));
+
+//undefined value returned from a function
+//since there is no return function here, no value is returned after function is called or defined
+var sum=0;
+function addThree() {
+    sum += 3;
+}
+
+//assignment with a returned value
+var changed=0;
+function change(num) {
+    return (num+5)/3;
+}
+changed = change(4);
+console.log(changed);
+
+//stand in line
+function nextInLine(arr,item) {
+    arr.push(item);
+    return arr.shift();
+}
+
+var testArr=[1,2,3,4,5];
+
+console.log("Before :" + JSON.stringify(testArr));
+console.log(nextInLine(testArr,6));
+console.log("After :" + JSON.stringify(testArr));
+
+//JSON.stringify is just a way to change array to string that can be easily printed out to the screen
+
+//boolean values
+//it has 2 values - either true or false
+function Happy() {
+    return true;
+}
+
+//if statements
+function trueOrFalse(isItTrue) {
+    if(isItTrue) {
+        return "Yes, It is True";
+    }
+    else {
+        return "No, It is False";
+    }
+}
+
+function trueOrFalse(wasThatTrue) {
+    if(wasThatTrue) {
+        return "Yes, that was true"
+    }
+    return "No, That was False"
+}
+
+console.log(trueOrFalse(true));
+
+//Equality operator
+function checkEquality(val) {
+    if(val==12){
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(checkEquality(10));
+
+//strictly equal is ===
+function testStrict(val){
+    if(val===13)
+    {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(testStrict(19)); //not equal
+
+function testStrict(val){
+    if(val===13)
+    {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(testStrict(13)); //equal
+
+function testStrict(val){
+    if(val===13)
+    {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(testStrict('13')); //not equal
+
+//logical and or operator
+function testValue(val){
+    if(val>=25 && val<=50){
+        return "YES";
+    }
+    else {
+        return "NO";
+    }
+}
+console.log(testValue(10));
+
+//golf code
+var names=["Hole-in-Hole!","Eagle","Birdie","Par","Bogey","Double Bogey","Go Home!"];
+function golfScore(par,strokes){
+    if(strokes==1)
+    {
+        return names[0];
+    }
+    else if(strokes<=par-2){
+        return names[1];
+    }
+    else if(strokes == par-1){
+        return names[2];
+    }
+    else if(strokes == par)
+    {
+        return names[3];
+    }
+    else if(strokes == par+1){
+        return names[4];
+    }
+    else if(strokes == par+2)
+    {
+        return names[5];
+    }
+    else if(par>= par+3)
+    {
+        return names[6];
+    }
+}
+console.log(golfScore(5,4));
+//output is "Birdie"
+
+//switch statements
+function caseInSwitch(val){
+    var answer="";
+    switch(val)
+    {
+        case 1:
+            return "alpha";
+            break;
+        case 2:
+            return "beta";
+            break;
+        case 3:
+            return "gamma";
+            break;
+        case 4:
+            return "delta";
+            break;
+        default:
+            return "Invalid";
+            break;
+    }
+}
+
+console.log(caseInSwitch(1));
+
+//returning boolean values from functions
+function isLessThan(a,b)
+{
+    if(a<b)
+    {
+        return true;
+    }
+    else 
+    {
+        return false;
+    }
+}
+
+console.log(isLessThan(10,15));
+
+function isLessThan(a,b)
+{
+    return a<b;
+}
+
+console.log(isLessThan(10,15));
+
+//objects
