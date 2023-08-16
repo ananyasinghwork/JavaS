@@ -685,3 +685,12 @@ console.log(cap);
 6. onkeydown
 7. onkeyup
 */
+
+//Event Listeners
+/* they are the most frequently used JS structures 
+that allow us to add interactive functionality to HTML elements
+by listening to different events that take place on the page*/
+
+/* there are two ways to add event listeners-
+1. inside the html page
+2. in the source js */
