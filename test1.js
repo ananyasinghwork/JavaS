@@ -618,6 +618,53 @@ console.log("HERE WE HAVE COMPLETED BASIC JS");
 //arrow functions
 const magic = () =>  new Date();
 
+//rest operators
+const sum = (function() {
+    return function sum(...args) {
+    return args.reduce((a,b)=>a+b,0);
+    };
+})();
+console.log(sum(1,2,3,4));
+
+//spread operators
+const arr1 =['JAN','FEB','MAR','APR','MAY'];
+let arr2;
+(function() {
+    arr2=[...arr1];
+    arr1[0]='potato'
+})();
+console.log(arr2);
+
+//destructuring variables
+var voxel ={x:3.6, y:7.4, z=6.54}
+
+var x=voxel.x;
+var y=voxel.y;
+var z=voxel.z;
+
+const {x:a, y:b, z:c}= voxel;
+
+//destructuring assignment
+const AVG_TEMPERATURES = {
+            today: 77.5,
+            tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+    const  {tomorrow: tempOfTmrw} = avgTemperatures;
+    return tempOfTmrw;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+//tempelate literals using backtick ``
+1. we can use backticks to create MULTI-LINE STRINGS 
+2. you can add single or double quotation mark inside the string using backticks
+3. we can put variables right in the string using the $ sign and {} = ${}
+
+//import and export
+
+
 //Events
 /* there are two kinds-
 1. event handler
@@ -633,3 +680,4 @@ const magic = () =>  new Date();
 6. onkeydown
 7. onkeyup
 */
+
