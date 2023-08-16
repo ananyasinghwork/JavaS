@@ -636,7 +636,7 @@ let arr2;
 console.log(arr2);
 
 //destructuring variables
-var voxel ={x:3.6, y:7.4, z=6.54}
+var voxel ={x:3.6, y:7.4, z:6.54}
 
 var x=voxel.x;
 var y=voxel.y;
@@ -658,11 +658,16 @@ function getTempOfTmrw(avgTemperatures) {
 console.log(getTempOfTmrw(AVG_TEMPERATURES));
 
 //tempelate literals using backtick ``
-1. we can use backticks to create MULTI-LINE STRINGS 
-2. you can add single or double quotation mark inside the string using backticks
-3. we can put variables right in the string using the $ sign and {} = ${}
+//1. we can use backticks to create MULTI-LINE STRINGS 
+//2. you can add single or double quotation mark inside the string using backticks
+//3. we can put variables right in the string using the $ sign and {} = ${}
 
-//import and export
+//import
+import { capitalizeString } from "./string_function";
+const cap = capitalizeString("Hello!");
+
+console.log(cap);
+// we use * to IMPORT EVERYTHING from a file
 
 
 //Events
@@ -680,4 +685,3 @@ console.log(getTempOfTmrw(AVG_TEMPERATURES));
 6. onkeydown
 7. onkeyup
 */
-
