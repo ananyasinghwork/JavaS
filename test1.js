@@ -694,3 +694,10 @@ by listening to different events that take place on the page*/
 /* there are two ways to add event listeners-
 1. inside the html page
 2. in the source js */
+
+/* Event Propogation
+passes through every node on the DOM until it reaches the end
+It occurs in three phases- 
+1. Event capturing
+2. Target
+3. Event Bubbling */
