@@ -1,7 +1,7 @@
 //DOM MANIPULATION
 
 //1. get elements by Id
-const title = document.getElementById('main-heading');
+/* const title = document.getElementById('main-heading');
 console.log(title);
 
 //2. get elements by class name
@@ -53,5 +53,32 @@ li.classList.add('list-items');
 console.log(li.classList.contains('list-items'));
 
 //remove elements
-li.remove();
+li.remove(); */
+
+//Traversing the DOM
+
+//parent node traversal
+let ul = document.querySelector('ul');
+console.log(ul.parentNode.parentNode);
+console.log(ul.parentElement.parentElement); 
+
+//child node traversal
+let ul1 = document.querySelector('ul');
+console.log(ul1.childNodes);
+console.log(ul1.firstChild);
+console.log(ul1.lastChild);
+
+ul1.childNodes[1].style.background = 'blue';
+
+console.log(ul1.children);
+console.log(ul1.firstChild);
+console.log(ul1.lastChild);
+
+//sibiling node traversal
+let ul2 = document.querySelector('ul');
+let div = document.querySelector('div');
+
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);
+console.log(div.childNodes);
 
